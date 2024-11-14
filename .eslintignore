@@ -22,3 +22,5 @@ assets/
 node_modules/
 dist/
 build/
+*.md
+*.html
