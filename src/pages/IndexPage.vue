@@ -6,13 +6,13 @@
       :todos="todos"
       :meta="meta"
     ></example-component>
+    <div class=" bg-red-500 w-32 h-32 text-center ">tailwindcss</div>
+    <TestAutoImport />
   </q-page>
 </template>
 
 <script setup lang="ts">
-import { ref } from 'vue';
 import { Todo, Meta } from 'components/models';
-import ExampleComponent from 'components/ExampleComponent.vue';
 
 defineOptions({
   name: 'IndexPage'
