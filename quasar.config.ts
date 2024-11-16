@@ -239,7 +239,7 @@ export default configure((ctx) => {
       builder: {
         // https://www.electron.build/configuration/configuration
 
-        appId: 'cafee-fun',
+        appId: 'jaco-blog',
       },
     },
 

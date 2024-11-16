@@ -1,8 +1,8 @@
 {
-  "name": "cafee-fun",
+  "name": "jaco-blog",
   "version": "0.0.1",
-  "description": "cafee-fun project",
-  "productName": "cafee-fun",
+  "description": "jaco-blog project",
+  "productName": "jaco-blog",
   "author": "jackchanel <1667716062@qq.com>",
   "type": "module",
   "private": true,
