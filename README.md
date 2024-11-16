@@ -1,9 +1,10 @@
 # Jaco-Blog (jaco-blog)
 
-Quasar framework project
+Jaco 个人博客
 
 - Vite5
 - Vue3
+- Quasar
 - tailwindcss
 
 ## Install the dependencies
