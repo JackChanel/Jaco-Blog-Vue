@@ -1,9 +1,8 @@
 <template>
-  <q-layout view="lhr lpR lfr">
-    <q-drawer show-if-above side="left" bordered>
-      <DrawerContent />
-    </q-drawer>
-
+  <q-layout view="hHh LpR fff">
+    <q-header>
+      <AppTabbar />
+    </q-header>
     <q-page-container>
       <router-view />
     </q-page-container>

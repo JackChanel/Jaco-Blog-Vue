@@ -7,15 +7,17 @@ export {}
 /* prettier-ignore */
 declare module 'vue' {
   export interface GlobalComponents {
+    AppTabbar: typeof import('./src/components/AppTabbar.vue')['default']
+    BaseTabbar: typeof import('./src/components/BaseTabbar.vue')['default']
     BaseTabs: typeof import('./src/components/BaseTabs.vue')['default']
     DrawerContent: typeof import('./src/components/DrawerContent.vue')['default']
-    EssentialLink: typeof import('./src/components/EssentialLink.vue')['default']
     ExampleComponent: typeof import('./src/components/ExampleComponent.vue')['default']
     MainCard: typeof import('./src/components/MainCard.vue')['default']
     PersonalCard: typeof import('./src/components/PersonalCard.vue')['default']
     RouterLink: typeof import('vue-router')['RouterLink']
     RouterView: typeof import('vue-router')['RouterView']
     SearchPopup: typeof import('./src/components/SearchPopup.vue')['default']
+    Tabbar: typeof import('./src/components/Tabbar.vue')['default']
     TestAutoImport: typeof import('./src/components/TestAutoImport.vue')['default']
   }
 }
