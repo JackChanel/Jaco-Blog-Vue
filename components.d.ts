@@ -8,16 +8,18 @@ export {}
 declare module 'vue' {
   export interface GlobalComponents {
     AppTabbar: typeof import('./src/components/AppTabbar.vue')['default']
-    BaseTabbar: typeof import('./src/components/BaseTabbar.vue')['default']
-    BaseTabs: typeof import('./src/components/BaseTabs.vue')['default']
+    BaseTabbar: typeof import('./src/components/Tabbar/BaseTabbar.vue')['default']
     DrawerContent: typeof import('./src/components/DrawerContent.vue')['default']
     ExampleComponent: typeof import('./src/components/ExampleComponent.vue')['default']
     MainCard: typeof import('./src/components/MainCard.vue')['default']
+    Notification: typeof import('./src/components/Tabbar/Notification.vue')['default']
     PersonalCard: typeof import('./src/components/PersonalCard.vue')['default']
     RouterLink: typeof import('vue-router')['RouterLink']
     RouterView: typeof import('vue-router')['RouterView']
+    SearchBar: typeof import('./src/components/Tabbar/SearchBar.vue')['default']
     SearchPopup: typeof import('./src/components/SearchPopup.vue')['default']
-    Tabbar: typeof import('./src/components/Tabbar.vue')['default']
+    TabNotification: typeof import('./src/components/Tabbar/TabNotification.vue')['default']
     TestAutoImport: typeof import('./src/components/TestAutoImport.vue')['default']
+    UserMenu: typeof import('./src/components/Tabbar/UserMenu.vue')['default']
   }
 }
