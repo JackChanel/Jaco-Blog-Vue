@@ -1,7 +1,7 @@
 <template>
   <div class="CardWrapper h-[28rem] w-full rounded-2xl relative shadow-xl mb-8">
     <div
-      class="ob-gradient-cut-plate absolute bg-gray-800 rounded-xl opacity-90 flex justify-center items-center pt-4 px-6 shadow-lg hover:shadow-2xl duration-300"
+      class="ob-gradient-cut-plate absolute bg-black/90 rounded-xl opacity-90 flex justify-center items-center pt-4 px-6 shadow-lg hover:shadow-2xl duration-300"
     >
       <div
         class="profile absolute w-full flex flex-col justify-center items-center"
@@ -14,9 +14,9 @@
             alt="myAvatar"
           />
           <h2 class="text-center pt-2 text-3xl font-semibold text-white">
-            JackChanel
+            Jack Chanel
           </h2>
-          <span class="UnderLine h-1 w-14 rounded-full mt-2" />
+          <span class="UnderLine h-1 w-24 rounded-full mt-2" />
         </div>
         <div
           class="h-full w-full flex flex-col flex-1 justify-center items-center"

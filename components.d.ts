@@ -20,7 +20,6 @@ declare module 'vue' {
     SearchBar: typeof import('./src/components/Tabbar/SearchBar.vue')['default']
     SocialChannels: typeof import('./src/components/PersonalCard/SocialChannels.vue')['default']
     SvgIcon: typeof import('./src/components/SvgIcon.vue')['default']
-    SVGIcon: typeof import('./src/components/SvgIcon.vue')['default']
     TabNotification: typeof import('./src/components/Tabbar/TabNotification.vue')['default']
     TestAutoImport: typeof import('./src/components/TestAutoImport.vue')['default']
     UserMenu: typeof import('./src/components/Tabbar/UserMenu.vue')['default']
