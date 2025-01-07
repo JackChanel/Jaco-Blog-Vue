@@ -3,8 +3,8 @@
     <ul
       class="flex flex-row justify-evenly flex-wrap w-full py-4 px-2 text-center items-center"
     >
-      <li v-for="id in 5" :key="id" class="diamond-clip-path">
-        <SvgIcon class-name="github" />
+      <li v-for="id in 5" :key="id" class="diamond-clip-path bg-white">
+        <SvgIcon name="github" size="1rem" color="grey" />
       </li>
     </ul>
   </div>

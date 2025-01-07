@@ -6,6 +6,8 @@
 import { configure } from 'quasar/wrappers';
 import { fileURLToPath } from 'node:url';
 import AutoImport from 'unplugin-auto-import/vite';
+import { createSvgIconsPlugin } from 'vite-plugin-svg-icons';
+import path from 'node:path';
 
 export default configure((ctx) => {
   return {
@@ -15,7 +17,7 @@ export default configure((ctx) => {
     // app boot file (/src/boot)
     // --> boot files are part of "main.js"
     // https://v2.quasar.dev/quasar-cli-vite/boot-files
-    boot: ['i18n', 'axios'],
+    boot: ['i18n', 'axios', 'svgIcon'],
 
     // https://v2.quasar.dev/quasar-cli-vite/quasar-config-js#css
     css: ['app.scss'],
@@ -90,7 +92,6 @@ export default configure((ctx) => {
           },
           { server: false },
         ],
-
         [
           'unplugin-vue-components/vite',
           {
@@ -98,6 +99,9 @@ export default configure((ctx) => {
             include: [/\.vue$/, /\.vue\?vue/],
           },
         ],
+        createSvgIconsPlugin({
+          iconDirs: [path.resolve(__dirname, 'src/assets/icons')],
+        }),
         AutoImport({
           include: [
             /\.[tj]sx?$/, // .ts, .tsx, .js, .jsx
