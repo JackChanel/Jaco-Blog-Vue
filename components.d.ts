@@ -11,6 +11,7 @@ declare module 'vue' {
     BaseTab: typeof import('./src/components/BaseTab.vue')['default']
     BaseTabbar: typeof import('./src/components/Tabbar/BaseTabbar.vue')['default']
     BlogCard: typeof import('./src/components/BlogCard.vue')['default']
+    DataStatistics: typeof import('./src/components/PersonalCard/DataStatistics.vue')['default']
     DrawerContent: typeof import('./src/components/DrawerContent.vue')['default']
     ExampleComponent: typeof import('./src/components/ExampleComponent.vue')['default']
     MainCard: typeof import('./src/components/MainCard.vue')['default']

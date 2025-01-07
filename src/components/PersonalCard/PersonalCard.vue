@@ -29,6 +29,7 @@
           </div>
 
           <SocialChannels />
+          <DataStatistics />
         </div>
       </div>
     </div>

@@ -21,12 +21,12 @@ const channelList = [
   {
     title: 'github',
     icon: 'github',
-    link: 'https://github.com/',
+    link: 'https://github.com/JackChanel',
   },
   {
     title: 'csdn',
     icon: 'csdn',
-    link: 'https://csdn.com/',
+    link: 'https://blog.csdn.net/HD_TMG',
   },
   {
     title: 'juejin',
