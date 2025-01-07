@@ -1,8 +1,8 @@
 <template>
   <div
     :class="[
-      'CardWrapper flex flex-nowrap gap-14 py-4',
-      `flex-${props.mode} text-sm`,
+      'CardWrapper flex flex-nowrap  text-sm',
+      props.mode === 'row' ? 'flex-row py-4 gap-14' : 'flex-col gap-4',
     ]"
   >
     <div :class="['Cover', props.mode === 'row' ? ' max-w-2xl' : '']">
@@ -18,12 +18,12 @@
         props.mode === 'row' ? 'max-w-2xl' : '',
       ]"
     >
-      <div class="ContentT text-8xl font-bold" v-if="props.mode === 'row'">
+      <div class="ContentTop text-8xl font-bold" v-if="props.mode === 'row'">
         Top Article
       </div>
-      <div class="ContentB">
-        <div class="UserInfo flex items-center gap-2 py-4">
-          <q-avatar size="md">
+      <div class="ContentBottom flex flex-col gap-3">
+        <div class="UserInfo flex items-center gap-2">
+          <q-avatar :size="props.mode === 'row' ? 'md' : 'sm'">
             <img
               src="https://jackchanel.oss-cn-hangzhou.aliyuncs.com/assets/myavatar.png"
             />
@@ -32,7 +32,13 @@
           <span class="Dot w-[3px] h-[3px] rounded-full bg-black"></span>
           <span>2 days ago</span>
         </div>
-        <span class="Title text-4xl">{{ props.title }}</span>
+        <span
+          :class="[
+            'Title font-bold',
+            props.mode === 'row' ? 'text-3xl' : 'text-xl',
+          ]"
+          >{{ props.title }}</span
+        >
         <span class="Description line-clamp-3">{{ props.description }} </span>
         <div class="AppendInfo font-bold flex items-center gap-2">
           <span class="Tags text-red-500"> {{ props.tags.join(' ') }}</span>
