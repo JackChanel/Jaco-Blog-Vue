@@ -1,5 +1,5 @@
 <template>
-  <q-page class="IndexPage mx-auto px-60 py-4 bg-gray-100">
+  <q-page class="IndexPage mx-auto xl:px-60 py-4 bg-gray-100">
     <div class="Banner">
       <BlogCard
         :title="blogData.title"
