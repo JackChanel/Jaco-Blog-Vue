@@ -10,10 +10,15 @@
 
 <script lang="ts" setup>
 import { computed } from 'vue';
-const props = defineProps<{
-  name: string;
-  color?: string;
-  size?: string;
-}>();
+const props = withDefaults(
+  defineProps<{
+    name: string;
+    color?: string;
+    size?: string;
+  }>(),
+  {
+    size: '1rem',
+  },
+);
 const symbolId = computed(() => `#icon-${props.name}`);
 </script>

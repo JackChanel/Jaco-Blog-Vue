@@ -11,7 +11,6 @@
 </template>
 
 <script setup lang="ts">
-// import IconCSDN from 'assets/icon/github.svg';
 </script>
 
 <style scoped lang="scss">
