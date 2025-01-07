@@ -1,6 +1,6 @@
 <template>
   <div class="bg-white text-black w-screen flex justify-between">
-    <div class="w-full flex flex-nowrap justify-between px-40">
+    <div class="w-full flex flex-nowrap justify-between px-60">
       <div class="tabLeft flex items-center space-x-5">
         <figure class="my-2">
           <q-img class="w-16" :src="logo" />

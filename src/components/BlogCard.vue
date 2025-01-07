@@ -1,11 +1,11 @@
 <template>
   <div
     :class="[
-      'CardWrapper flex flex-nowrap gap-10 p-4',
+      'CardWrapper flex flex-nowrap gap-14 py-4',
       `flex-${props.mode} text-sm`,
     ]"
   >
-    <div class="Cover max-w-md">
+    <div :class="['Cover', props.mode === 'row' ? ' max-w-2xl' : '']">
       <img
         class="rounded-xl"
         src="https://jackchanel.oss-cn-hangzhou.aliyuncs.com/assets/cover.png"
@@ -14,26 +14,31 @@
     </div>
     <div
       :class="[
-        'Content flex flex-col gap-3',
-        props.mode === 'row' ? 'max-w-md' : '',
+        'Content flex flex-col justify-around gap-3 text-base',
+        props.mode === 'row' ? 'max-w-2xl' : '',
       ]"
     >
-      <div class="UserInfo flex items-center gap-2 py-4">
-        <q-avatar size="md">
-          <img
-            src="https://jackchanel.oss-cn-hangzhou.aliyuncs.com/assets/myavatar.png"
-          />
-        </q-avatar>
-        <span>Jack Chanel</span>
-        <span class="Dot w-[3px] h-[3px] rounded-full bg-black"></span>
-        <span>2 days ago</span>
+      <div class="ContentT text-8xl font-bold" v-if="props.mode === 'row'">
+        Top Article
       </div>
-      <span class="Title text-4xl">{{ props.title }}</span>
-      <span class="Description line-clamp-3">{{ props.description }} </span>
-      <div class="AppendInfo font-bold flex items-center gap-2">
-        <span class="Tags text-red-500"> {{ props.tags.join(' ') }}</span>
-        <span class="Dot w-[3px] h-[3px] rounded-full bg-black"></span>
-        <span>4 min read</span>
+      <div class="ContentB">
+        <div class="UserInfo flex items-center gap-2 py-4">
+          <q-avatar size="md">
+            <img
+              src="https://jackchanel.oss-cn-hangzhou.aliyuncs.com/assets/myavatar.png"
+            />
+          </q-avatar>
+          <span>Jack Chanel</span>
+          <span class="Dot w-[3px] h-[3px] rounded-full bg-black"></span>
+          <span>2 days ago</span>
+        </div>
+        <span class="Title text-4xl">{{ props.title }}</span>
+        <span class="Description line-clamp-3">{{ props.description }} </span>
+        <div class="AppendInfo font-bold flex items-center gap-2">
+          <span class="Tags text-red-500"> {{ props.tags.join(' ') }}</span>
+          <span class="Dot w-[3px] h-[3px] rounded-full bg-black"></span>
+          <span>4 min read</span>
+        </div>
       </div>
     </div>
   </div>

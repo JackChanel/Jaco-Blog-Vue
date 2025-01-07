@@ -1,6 +1,6 @@
 <template>
-  <q-page class="IndexPage max-w-screen-xl mx-auto">
-    <div class="Banner bg-yellow-200 flex flex-col items-center justify-center">
+  <q-page class="IndexPage mx-auto px-60">
+    <div class="Banner">
       <BlogCard
         :title="blogData.title"
         :description="blogData.description"
